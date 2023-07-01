@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
 }
 
 .navbar {
@@ -29,7 +29,7 @@ body {
 
 /* child div will acquire 100% width of its parent division above and will resize acc to its parent div */
 
-.nav__item {
+.button__primary {
     background-image: linear-gradient(
             /*Linear gradient applies a series of colors to an element and its syntax is first the direction of the color (here it is (to right) and then colors 0% is start point, 50% is mid, 100% is last. */
             to right,
@@ -39,16 +39,72 @@ body {
     color: #fff;
     border: none;
     padding: 12px;
-    border-radius: 6px;
+    border-radius: 6px;  /*to makes the corners round */
     font-weight: 600;
 }
 
+/* Main body Css */
+
+
+/* Hero container css */
+.container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero__image__container {
+    width: 100%;
+}
+
+.hero__image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.hero__text {
+    font-size: 32px; /*Its a good practice to write font sizes in multiples of 4*/
+    color: #1D3557;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+
+/* Explore menu css */
+
+.Explorer__menu__text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    color: #1D3557;
+}
+
+.food__card__container {
+    width: 100%;
+}
+
+.food__image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.food__card {
+    background-color: #f9f9f9;
+}
+
+.food__card__description {
+    padding: 15px;
+}
 
 /*To add hover effect on zomato order button */
 
-.nav__item:hover {
+.button__primary:hover {
    background-position: right center;            /* to change or swap colors from color gradient*/
     border: 2px solid #FF6767;
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     cursor: pointer;
 }
 
@@ -61,6 +117,24 @@ body {
         padding: 10px 30px;
     }
 
+    .hero__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .Explorer__menu__lists {
+        margin-top: 45px;
+        display: flex;
+        gap: 15px;
+    }
+
+    #pizza__card {
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
 }
 
 @media (min-width : 1024px) {
@@ -68,10 +142,25 @@ body {
         width: 150px;
     }
     
-    .nav__item{
+    .button__primary{
         padding: 20px;
         font-size: 20px;
 
     }
 
+    .container {
+        width: 80%;
+    }
+
+    .hero__text {
+        font-size: 50px;
+    }
+
+    .Explorer__menu__lists {
+        gap: 25px;
+    }
+
+    .Explorer__menu__text {
+        font-size: 45px;
+    }
 }
