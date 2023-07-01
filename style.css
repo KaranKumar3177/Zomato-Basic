@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*to remove any defaulT margins and paddings from browser*/
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f9fafc;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.navbar__brand {
+    width: 200px;
+}
+
+/* Parent division for zomato logo */
+
+.navbar__brandLogo {
+    width: 100%;
+}
+
+/* child div will acquire 100% width of its parent division above and will resize acc to its parent div */
+
+.nav__item {
+    background-image: linear-gradient(
+            /*Linear gradient applies a series of colors to an element and its syntax is first the direction of the color (here it is (to right) and then colors 0% is start point, 50% is mid, 100% is last. */
+            to right,
+            #ff512f 0%,
+            #dd2476 50%,
+            #ff512f 100%);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+/*To add hover effect on zomato order button */
+
+.nav__item:hover {
+   background-position: right center;            /* to change or swap colors from color gradient*/
+    border: 2px solid #FF6767;
+    cursor: pointer;
+}
+
+
+/* Media Queries  : stuff changes when we increase/decrease screen sizes */
+
+@media (min-width : 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+
+}
+
+@media (min-width : 1024px) {
+    .navbar__brand {
+        width: 150px;
+    }
+    
+    .nav__item{
+        padding: 20px;
+        font-size: 20px;
+
+    }
+
+}
