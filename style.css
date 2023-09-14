@@ -18,7 +18,7 @@ body {
 }
 
 .navbar__brand {
-    width: 200px;
+    width: 200px; 
 }
 
 /* Parent division for zomato logo */
@@ -33,6 +33,7 @@ body {
     background-image: linear-gradient(
             /*Linear gradient applies a series of colors to an element and its syntax is first the direction of the color (here it is (to right) and then colors 0% is start point, 50% is mid, 100% is last. */
             to right,
+      
             #ff512f 0%,
             #dd2476 50%,
             #ff512f 100%);
@@ -72,7 +73,17 @@ body {
 
 /* video section css */
 
-.video{
+
+.video__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+}
+.video__footage {
+    
     position: relative;
 }
 
@@ -120,13 +131,17 @@ body {
     padding: 15px;
 }
 
+.view_more {
+    text-align: center;
+}
+
 /*To add hover effect on zomato order button */
 
 .button__primary:hover {
    background-position: right center;            /* to change or swap colors from color gradient*/
     border: 2px solid #FF6767;
     box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    cursor: pointer;
+    cursor: pointer;   /* When we hover over button, mouse cursor changes to pointed finger */
 }
 
 
