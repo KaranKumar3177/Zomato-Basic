@@ -80,19 +80,24 @@ body {
     justify-content: center;
     align-items: center;
     padding: 50px;
+    position: relative;
+
     
 }
-.video__footage {
-    
-    position: relative;
+.video {
+    border: 50px black;
+   
 }
 
 .video__bg{
-        position:absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        
+        width: 25%;
+        height: 50%;
+        margin: 0px -30px -25px 0px;
+        margin-top: 30px;
+        z-index: -1;
+
 
         background-image: linear-gradient(
             to right,
@@ -102,6 +107,20 @@ body {
         );
 }
 
+.video__text {
+    margin-top: -25px;
+    margin-left: 250px;
+    width: 700px;
+   display: flex;
+   
+}
+
+.text {
+    text-align: center;
+    color: #1d3557;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
 
 /* Explore menu css */
 
@@ -241,4 +260,43 @@ body {
             #ff512f 0%,
             #dd2476 50%,
             #ff512f 100%);
+}
+
+/* Footer part */
+
+.footer__section {
+    padding: 100px 120px 120px 0px;
+    margin-top: 125px;
+    width: 92.1%;
+    height: 2px;
+    background-image: linear-gradient(
+            /*Linear gradient applies a series of colors to an element and its syntax is first the direction of the color (here it is (to right) and then colors 0% is start point, 50% is mid, 100% is last. */
+            to right,
+            #ff512f 0%,
+            #dd2476 50%,
+            #ff512f 100%);
+
+     border-radius: 25px 25px 0px 0px;
+    
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__logo {
+    margin-top: -75px;
+    width: 300px;
+    filter: brightness(0) invert(1);
+}
+.logo__content {
+    margin-top: -50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+   
+    gap: 6px;
+  
+  
 }
